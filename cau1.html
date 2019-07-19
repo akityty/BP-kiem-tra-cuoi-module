@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cau1</title>
+</head>
+<body>
+<script>
+    function findMaxScore(arr) {
+        let maxNumber = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            if (maxNumber < arr[i]) {
+                maxNumber = arr[i];
+            }
+        }
+        return maxNumber;
+    }
+
+    let arr1 = [10, 5, 2, 8, -1, 6, 8];
+    let arr2 = [2, 4, 0, 5, 1];
+    let arr3 = [-8, -6, -2, -6, -1, -1, -4];
+    let resultArr1 = findMaxScore(arr1);
+    console.log(resultArr1);
+    let resultArr2 = findMaxScore(arr2);
+    console.log(resultArr2);
+    let resultArr3 = findMaxScore(arr3);
+    console.log(resultArr3);
+</script>
+</body>
+</html>

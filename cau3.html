@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cau3</title>
+</head>
+<body>
+<script>
+    function printFibonacci(n) {
+        let number1 = 0, number2 = 1, temp = 0;
+        let arr = [];
+        while (number1 + number2 + temp < n) {
+            temp = number1;
+            number1 = number2;
+            number2 += temp;
+            arr.push(number2);
+        }
+        return arr;
+    }
+    let n = prompt("nhập số lượng con số fibonacci muốn ");
+    let result = printFibonacci(n);
+    console.log(result);
+</script>
+</body>
+</html>
